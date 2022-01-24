@@ -1,0 +1,18 @@
+.news {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.news__tile {
+  margin: 20px;
+  max-width: 200px;
+}
+
+.news__image {
+  object-fit: contain;
+  width: 200px;
+}
