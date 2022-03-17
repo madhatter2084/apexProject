@@ -1,0 +1,12 @@
+.map {
+  display: flex;
+  max-height: 400px;
+  max-width: 400px;
+  margin: 30px;
+}
+
+.map__image {
+  height: 300px;
+  width: 400px;
+  object-fit: contain;
+}

@@ -1,19 +1,19 @@
 import "./News.css";
 import React, { useEffect, useState, Fragment } from "react";
 import axios from "./axios";
+import requests from "./requests";
 
-function News({ fetchURL }) {
+function News() {
   const [report, setReport] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(fetchURL);
+      const request = await axios.get(requests.fetchNews);
       setReport(request.data);
-      console.log(report);
       return request;
     }
     fetchData();
-  }, [fetchURL]);
+  }, []);
 
   return (
     <div className="news">
@@ -28,9 +28,16 @@ function News({ fetchURL }) {
                   className="news__image"
                   alt={report.title}
                 />
-                <h4 className="news__title" key={index + 100}>
-                  {report.title}
-                </h4>
+                <a
+                  href={report.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="news__link"
+                >
+                  <h4 className="news__title" key={index + 100}>
+                    {report.title}
+                  </h4>
+                </a>
               </div>
             </Fragment>
           )

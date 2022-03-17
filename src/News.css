@@ -5,6 +5,7 @@
   object-fit: contain;
   width: 100%;
   justify-content: flex-end;
+  text-align: center;
 }
 
 .news__tile {
@@ -15,4 +16,12 @@
 .news__image {
   object-fit: contain;
   width: 200px;
+}
+
+.news__link {
+  text-decoration: none;
+}
+
+.news__link:hover {
+  color: red;
 }

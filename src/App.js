@@ -1,6 +1,6 @@
 import "./App.css";
 import News from "./News.js";
-import requests from "./requests.js";
+import Map from "./Map";
 
 function App() {
   return (
@@ -9,10 +9,10 @@ function App() {
       {/* nav */}
       {/* banner */}
       {/* player cards */}
-      {/* map */}
+      <Map />
       {/* crafting */}
       {/* server status */}
-      <News fetchURL={requests.fetchNews} />
+      <News />
     </div>
   );
 }
