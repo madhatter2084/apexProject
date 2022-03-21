@@ -1,18 +1,18 @@
 import "./App.css";
 import News from "./News.js";
-import Map from "./Map";
+import Banner from "./Banner.js";
+import Map from "./Map.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>sexy ass apex api site</h1>
       {/* nav */}
-      {/* banner */}
-      {/* player cards */}
-      <Map />
+      <Banner />
+      <News />
+      {/* character select */}
       {/* crafting */}
       {/* server status */}
-      <News />
+      <Map />
     </div>
   );
 }
