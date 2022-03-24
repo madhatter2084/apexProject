@@ -1,3 +1,7 @@
 .App {
   background-color: #797979;
 }
+
+.content {
+  display: flex;
+}
