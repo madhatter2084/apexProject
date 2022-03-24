@@ -1,0 +1,30 @@
+.map {
+  width: 100%;
+  display: flex;
+  margin: 30px;
+  color: white;
+  justify-content: center;
+}
+
+.brCurrent {
+  text-align: center;
+  position: relative;
+}
+
+.arenaCurrent {
+  text-align: center;
+  position: relative;
+}
+
+.map__image {
+  max-height: 150px;
+  max-width: 480px;
+  margin: 20px;
+}
+
+.map__text {
+  position: absolute;
+  top: 45px;
+  left: 130px;
+  text-shadow: 2px 2px #000000;
+}

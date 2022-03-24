@@ -2,9 +2,6 @@
   margin: 30px;
   display: flex;
   flex-direction: column;
-  object-fit: contain;
-  width: 100%;
-  justify-content: flex-end;
   text-align: center;
 }
 
@@ -20,6 +17,8 @@
 
 .news__link {
   text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px #000000;
 }
 
 .news__link:hover {

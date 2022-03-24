@@ -1,3 +1,9 @@
 * {
   margin: 0;
+  font-family: apexFont;
+}
+
+@font-face {
+  font-family: apexFont;
+  src: url(./assets/AgencyFB-Bold.ttf);
 }

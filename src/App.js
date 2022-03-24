@@ -1,7 +1,7 @@
 import "./App.css";
-import News from "./News.js";
-import Banner from "./Banner.js";
-import Map from "./Map.js";
+import Banner from "./components/Banner.js";
+import Layout from "./components/Layout.js";
+import News from "./modules/News.js";
 
 function App() {
   return (
@@ -9,10 +9,8 @@ function App() {
       {/* nav */}
       <Banner />
       <News />
-      {/* character select */}
-      {/* crafting */}
-      {/* server status */}
-      <Map />
+      <Layout />
+      {/* <Footer /> */}
     </div>
   );
 }

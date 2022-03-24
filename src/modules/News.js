@@ -1,7 +1,7 @@
 import "./News.css";
 import React, { useEffect, useState, Fragment } from "react";
-import axios from "./axios";
-import requests from "./requests";
+import axios from "../config/axios";
+import requests from "../config/requests";
 
 function News() {
   const [report, setReport] = useState([]);
@@ -19,7 +19,7 @@ function News() {
     <div className="news">
       {report.map(
         (report, index) =>
-          index < 10 && (
+          index < 5 && (
             <Fragment key={index}>
               <div className="news__tile">
                 <img
@@ -34,9 +34,9 @@ function News() {
                   target="_blank"
                   className="news__link"
                 >
-                  <h4 className="news__title" key={index + 100}>
+                  <h3 className="news__title" key={index + 100}>
                     {report.title}
-                  </h4>
+                  </h3>
                 </a>
               </div>
             </Fragment>

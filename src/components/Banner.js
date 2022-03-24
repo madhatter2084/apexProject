@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css";
-import logo from "./assets/apexLogo.png";
+import logo from "../assets/apexLogo.png";
 
 function Banner() {
   return (
