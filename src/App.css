@@ -1,7 +1,6 @@
 .App {
-  background-color: #797979;
-}
-
-.content {
+  background-color: white;
+  width: auto;
   display: flex;
+  flex-direction: column;
 }

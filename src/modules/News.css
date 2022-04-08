@@ -1,8 +1,10 @@
 .news {
-  margin: 30px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  background-image: linear-gradient(#000000, black, red);
 }
 
 .news__tile {

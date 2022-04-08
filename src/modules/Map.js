@@ -24,17 +24,17 @@ function Map() {
           className="map__image"
         />
         <div className="map__text">
-          <h1>Battle Royale</h1>
-          <h3 className="map__name">
+          <h2>Battle Royale</h2>
+          <div className="map__name">
             Current Map: {mapData?.battle_royale?.current?.map}
-          </h3>
-          <h3>
+          </div>
+          <div>
             Remaining Time: {mapData?.battle_royale?.current?.remainingTimer}{" "}
             (refresh to update)
-          </h3>
-          <h3 className="map__name">
+          </div>
+          <div className="map__name">
             Up Next: {mapData?.battle_royale?.next?.map}
-          </h3>
+          </div>
         </div>
       </div>
       <div className="arenaCurrent">
@@ -44,15 +44,15 @@ function Map() {
           className="map__image"
         />
         <div className="map__text">
-          <h1>Arenas</h1>
-          <h3 className="map__name">
+          <h2>Arenas</h2>
+          <div className="map__name">
             Current Map: {mapData?.arenas?.current?.map}
-          </h3>
-          <h3>
+          </div>
+          <div>
             Remaining Time: {mapData?.arenas?.current?.remainingTimer} (refresh
             to update)
-          </h3>
-          <h3 className="map__name">Up Next: {mapData?.arenas?.next?.map}</h3>
+          </div>
+          <div className="map__name">Up Next: {mapData?.arenas?.next?.map}</div>
         </div>
       </div>
     </div>

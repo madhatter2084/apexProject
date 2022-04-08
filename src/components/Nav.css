@@ -16,3 +16,12 @@ li {
   width: 100%;
   margin: 25px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
