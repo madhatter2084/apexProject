@@ -1,6 +1,12 @@
 * {
   margin: 0;
   font-family: apexFont;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {

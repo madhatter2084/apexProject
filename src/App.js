@@ -5,6 +5,7 @@ import Nav from "./components/Nav.js";
 import Home from "./modules/Home";
 import Map from "./modules/Map";
 import Error from "./modules/Error";
+import News from "./modules/News";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/news" element={<News />} />
           <Route path="*" element={<Error />} />
         </Routes>
         {/* <Footer /> */}
