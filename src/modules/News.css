@@ -8,12 +8,12 @@
 }
 
 .news__tile {
-  margin: 20px;
-  width: 250px;
+  margin: 30px;
+  width: 200px;
+  height: 175px;
 }
 
 .news__image {
-  object-fit: contain;
   width: 200px;
 }
 
