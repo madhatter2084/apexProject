@@ -1,8 +1,8 @@
 .character {
-  height: 100px;
   text-align: center;
-  background-color: red;
+  background-image: linear-gradient(red, black, #000000);
   align-items: center;
   text-align: center;
   justify-content: center;
+  height: 100vh;
 }

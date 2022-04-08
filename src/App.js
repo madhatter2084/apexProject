@@ -6,6 +6,9 @@ import Home from "./modules/Home";
 import Map from "./modules/Map";
 import Error from "./modules/Error";
 import News from "./modules/News";
+import Replicator from "./modules/Replicator";
+import Shop from "./modules/Shop";
+import Character from "./modules/Character";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/map" element={<Map />} />
           <Route path="/news" element={<News />} />
+          <Route path="/replicator" element={<Replicator />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/character" element={<Character />} />
           <Route path="*" element={<Error />} />
         </Routes>
         {/* <Footer /> */}
