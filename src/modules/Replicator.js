@@ -18,10 +18,18 @@ function Replicator() {
 
   return (
     <div className="replicator">
-      <div className="replicator__item_tile">
-        <div className="replicator__image"></div>
-        <div className="replicator__info">Here is a thing about a thing</div>
-      </div>
+      {replicator?.map((title, index) => (
+        <div className="replicator__item_tile" key={index}>
+          <h1 className="replicator__item_type">{title?.bundle}</h1>
+          <div className="replicator__card">
+            {title.bundleContent.map((items, index) => (
+              <div className="replicator__item_name" key={index}>
+                {items?.item}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

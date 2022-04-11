@@ -1,5 +1,32 @@
 .replicator {
   color: white;
   background-image: linear-gradient(red, black, #000000);
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.replicator__item_tile {
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  margin: 30px;
+  flex-direction: row;
+  box-shadow: 5px 5px 10px black;
+}
+
+.replicator__image {
+  height: 125px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.replicator__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
