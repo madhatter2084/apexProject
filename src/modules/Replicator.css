@@ -12,21 +12,29 @@
   border-style: solid;
   border-color: #000000;
   border-radius: 10px;
-  height: 200px;
+  max-height: 400px;
   width: 400px;
   margin: 30px;
   flex-direction: row;
   box-shadow: 5px 5px 10px black;
+  background-color: gray;
 }
 
 .replicator__image {
-  height: 125px;
+  height: 75px;
   border-style: solid;
   border-color: #000000;
+  border-radius: 10px;
 }
 
 .replicator__card {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px;
+}
+
+.replicator__item {
+  width: 100px;
 }
