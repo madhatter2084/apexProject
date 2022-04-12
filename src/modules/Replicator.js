@@ -23,13 +23,14 @@ function Replicator() {
           <h1 className="replicator__item_type">{repContent?.bundleType}</h1>
           <div className="replicator__card">
             {repContent.bundleContent.map((items, bIndex) => (
-              <div className="" key={bIndex}>
+              <div className="replicator__item_bin" key={bIndex}>
                 <div className="replicator__item">{items?.itemType?.name}</div>
                 <img
                   className="replicator__image"
                   src={items?.itemType?.asset}
                   alt={items?.itemType?.name}
                 />
+                <div className="replicator__cost">{items?.cost}</div>
               </div>
             ))}
           </div>
