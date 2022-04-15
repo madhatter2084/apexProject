@@ -16,13 +16,13 @@ function Nav() {
           <Link to="/news">News</Link>
         </li>
         <li>
-          <Link to="/character">Character Search</Link>
+          <Link to="/character">Stats</Link>
         </li>
         <li>
           <Link to="/replicator">Replicator</Link>
         </li>
         <li>
-          <Link to="/shop">Apex Shop</Link>
+          <Link to="/shop">Shop</Link>
         </li>
       </ul>
     </div>

@@ -1,5 +1,9 @@
 .home {
   color: white;
-  background-image: linear-gradient(red, black, #000000);
+  background: url("../assets/apexImage.jpg") no-repeat center 20px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
 }

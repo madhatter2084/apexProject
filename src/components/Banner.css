@@ -3,6 +3,8 @@
   height: 200px;
   background-color: black;
   text-align: center;
+  /* position: sticky;
+  top: 0; */
 }
 
 .banner__logo {

@@ -1,6 +1,10 @@
 .replicator {
   color: white;
-  background-image: linear-gradient(red, black, #000000);
+  background: url("../assets/apexImage.jpg") no-repeat center 20px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -9,15 +13,16 @@
 }
 
 .replicator__item_tile {
-  border-style: 1px solid;
+  border-style: solid;
   border-color: #000000;
   border-radius: 10px;
   max-height: 400px;
   width: 400px;
   margin: 30px;
   flex-direction: row;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 10px 10px 10px black;
   background-color: gray;
+  background-image: linear-gradient(black, #000000, yellow);
 }
 
 .replicator__image {
