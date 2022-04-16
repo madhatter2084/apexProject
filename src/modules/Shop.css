@@ -1,6 +1,6 @@
 .shop {
   color: white;
-  background: url("../assets/apexImage.jpg") no-repeat center 20px fixed;
+  background: url("../assets/apexImage.PNG") no-repeat center 50px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,6 +27,11 @@
 }
 
 .shop__image {
-  height: 200px;
+  max-height: 200px;
+  max-width: 175px;
   object-fit: contain;
+}
+
+.shop__price {
+  bottom: 0px;
 }

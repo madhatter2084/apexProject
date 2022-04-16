@@ -22,15 +22,15 @@ function Shop() {
         <div className="shop__tile" key={index}>
           <h1 className="shop__title">{items.title}</h1>
           <img className="shop__image" src={items.asset} alt={items.title} />
-          <div>
-            {items.pricing.map((prices, pIndex) => (
-              <div className="shop__price" key={pIndex}>
-                {prices.ref}
-                {": "}
-                {prices.quantity}
-              </div>
-            ))}
-          </div>
+          {/* <div> */}
+          {items.pricing.map((prices, pIndex) => (
+            <div className="shop__price" key={pIndex}>
+              {prices.ref}
+              {": "}
+              {prices.quantity}
+            </div>
+          ))}
+          {/* </div> */}
         </div>
       ))}
     </div>
