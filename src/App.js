@@ -8,7 +8,7 @@ import Error from "./modules/Error";
 import News from "./modules/News";
 import Replicator from "./modules/Replicator";
 import Shop from "./modules/Shop";
-import Character from "./modules/Character";
+import Stats from "./modules/Stats";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/replicator" element={<Replicator />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/character" element={<Character />} />
+          <Route path="/stats" element={<Stats />} />
           <Route path="*" element={<Error />} />
         </Routes>
         {/* <Footer /> */}

@@ -1,9 +1,60 @@
 .home {
   color: white;
-  background: url("../assets/apexImage.jpg") no-repeat center 20px fixed;
+  background: url("../assets/apexImage.jpg") no-repeat center 50px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.home__button_grp {
+  margin-top: 50px;
+}
+
+.home__button {
+  height: 150px;
+  width: 300px;
+  border-style: solid;
+  border-color: yellow;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px black;
+  margin: 10px;
+  color: white;
+  text-shadow: 3px 3px #000000;
+  transition: transform ease 300ms;
+  cursor: pointer;
+}
+
+.home__button:hover {
+  transform: translate(0, -10px);
+}
+
+.home__map {
+  background-image: url("../assets/bloodhound.png");
+  background-size: 300px 150px;
+}
+
+.home__news {
+  background-image: url("../assets/gibby.png");
+  background-size: 300px 150px;
+}
+
+.home__stats {
+  background-image: url("../assets/wraith.png");
+  background-size: 300px 150px;
+}
+
+.home__replicator {
+  background-image: url("../assets/pathfinder.png");
+  background-size: 300px 150px;
+}
+
+.home__shop {
+  background-image: url("../assets/bang.png");
+  background-size: 300px 150px;
 }

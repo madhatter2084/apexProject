@@ -23,6 +23,11 @@
   border-color: yellow;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #000000;
+  transition: transform ease 300ms;
+}
+
+.news__image:hover {
+  transform: translate(0, -10px);
 }
 
 .news__link {

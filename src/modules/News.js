@@ -20,18 +20,19 @@ function News() {
       {report.map((report, index) => (
         <Fragment key={index}>
           <div className="news__tile">
-            <img
-              key={index + 50}
-              src={report.img}
-              className="news__image"
-              alt={report.title}
-            />
             <a
               href={report.link}
               rel="noopener noreferrer"
               target="_blank"
               className="news__link"
             >
+              <img
+                key={index + 50}
+                src={report.img}
+                className="news__image"
+                alt={report.title}
+              />
+
               <h3 className="news__title" key={index + 100}>
                 {report.title}
               </h3>
