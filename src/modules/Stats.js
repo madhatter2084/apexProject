@@ -3,12 +3,8 @@ import "./Stats.css";
 
 function Character() {
   return (
-    <div className="character">
-      <input
-        type="text"
-        placeholder="IxMADHATTERxI"
-        id="character__text"
-      ></input>
+    <div className="stats">
+      <input type="text" placeholder="IxMADHATTERxI" id="stats__text"></input>
     </div>
   );
 }

@@ -5,7 +5,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,4 +61,11 @@
 .home__shop {
   background-image: url("../assets/bang.png");
   background-size: 300px 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    background: url("../assets/mobileBackground.jpg") no-repeat center center
+      fixed;
+  }
 }

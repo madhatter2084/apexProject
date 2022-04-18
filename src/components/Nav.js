@@ -12,6 +12,11 @@ function Nav() {
           </Link>
         </li>
         <li>
+          <Link to="/stats" className="nav__link">
+            Stats
+          </Link>
+        </li>
+        <li>
           <Link to="/map" className="nav__link">
             Map
           </Link>
@@ -21,11 +26,7 @@ function Nav() {
             News
           </Link>
         </li>
-        <li>
-          <Link to="/stats" className="nav__link">
-            Stats
-          </Link>
-        </li>
+
         <li>
           <Link to="/replicator" className="nav__link">
             Replicator
