@@ -22,7 +22,7 @@
   flex-direction: row;
   box-shadow: 10px 10px 10px black;
   background-color: gray;
-  background-image: linear-gradient(black, #000000, yellow);
+  background-image: url(../assets/replicator.jpg);
 }
 
 .replicator__image {
@@ -33,6 +33,7 @@
   box-shadow: 5px 5px 10px black;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: #000000;
 }
 
 .replicator__card {

@@ -7,22 +7,34 @@ function Nav() {
     <div className="nav">
       <ul className="nav__links">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="nav__link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/map">Map</Link>
+          <Link to="/map" className="nav__link">
+            Map
+          </Link>
         </li>
         <li>
-          <Link to="/news">News</Link>
+          <Link to="/news" className="nav__link">
+            News
+          </Link>
         </li>
         <li>
-          <Link to="/stats">Stats</Link>
+          <Link to="/stats" className="nav__link">
+            Stats
+          </Link>
         </li>
         <li>
-          <Link to="/replicator">Replicator</Link>
+          <Link to="/replicator" className="nav__link">
+            Replicator
+          </Link>
         </li>
         <li>
-          <Link to="/shop">Shop</Link>
+          <Link to="/shop" className="nav__link">
+            Shop
+          </Link>
         </li>
       </ul>
     </div>

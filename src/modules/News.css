@@ -22,7 +22,7 @@
   border-style: solid;
   border-color: yellow;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #000000;
+  box-shadow: 8px 8px 10px #000000;
   transition: transform ease 300ms;
 }
 
@@ -34,8 +34,4 @@
   text-decoration: none;
   color: white;
   text-shadow: 2px 2px #000000;
-}
-
-.news__link:hover {
-  color: red;
 }
