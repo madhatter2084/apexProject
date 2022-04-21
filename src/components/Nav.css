@@ -29,6 +29,11 @@ a {
   color: white;
 }
 
-/* a:hover {
-  color: red;
-} */
+@media only screen and (max-width: 678px) {
+  /* li:not(:first-child) {
+    display: none;
+  } */
+  .nav {
+    display: none;
+  }
+}

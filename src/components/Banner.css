@@ -3,12 +3,10 @@
   height: 200px;
   background-color: black;
   text-align: center;
-  /* position: sticky;
-  top: 0; */
 }
 
 .banner__logo {
   width: auto;
-  height: 175px;
-  margin: 10px;
+  height: 145px;
+  margin-top: 30px;
 }

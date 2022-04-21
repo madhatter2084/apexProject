@@ -16,8 +16,8 @@
 }
 
 .map__image {
-  height: auto;
-  width: 80%;
+  height: 175px;
+  width: 500px;
   margin: 20px;
   border-style: solid;
   border-color: yellow;
