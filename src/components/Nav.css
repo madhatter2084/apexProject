@@ -50,6 +50,8 @@ a {
     background-color: #000000;
     margin-left: -38px;
     line-height: 30px;
+    z-index: 1;
+    height: 500px;
   }
 
   li {

@@ -10,7 +10,7 @@ function Nav() {
   }
 
   return (
-    <div className="nav" id="nav">
+    <div className="nav">
       <img
         src={burger}
         alt="menu icon"
