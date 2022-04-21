@@ -29,11 +29,30 @@ a {
   color: white;
 }
 
+.nav__burger {
+  display: none;
+}
+
 @media only screen and (max-width: 678px) {
-  /* li:not(:first-child) {
+  .nav__burger {
+    display: inline;
+    height: 25px;
+    width: 25px;
+  }
+
+  .nav__links {
     display: none;
-  } */
-  /* .nav {
-    display: none;
-  } */
+  }
+
+  .nav__expanded {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-left: -85px;
+    line-height: 30px;
+  }
+
+  li {
+    height: 10px;
+  }
 }

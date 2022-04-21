@@ -1,11 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import burger from "../assets/burgerMenu.png";
 
 function Nav() {
+  function updateClass() {
+    let nav = document.getElementById("navUl");
+    nav.classList.toggle("nav__expanded");
+    nav.classList.toggle("nav__links");
+  }
+
   return (
-    <div className="nav">
-      <ul className="nav__links">
+    <div className="nav" id="nav">
+      <img
+        src={burger}
+        alt="menu icon"
+        className="nav__burger"
+        onClick={updateClass}
+      />
+      <ul className="nav__links" id="navUl">
         <li>
           <Link to="/" className="nav__link">
             Home
