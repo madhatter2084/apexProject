@@ -7,7 +7,6 @@ function Nav() {
   function updateClass() {
     let nav = document.getElementById("navUl");
     nav.classList.toggle("nav__expanded");
-    nav.classList.toggle("nav__links");
   }
 
   return (
