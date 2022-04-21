@@ -47,12 +47,13 @@ a {
   .nav__expanded {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    margin-left: -85px;
+    background-color: #000000;
+    margin-left: -38px;
     line-height: 30px;
   }
 
   li {
-    height: 10px;
+    background-color: #000000;
+    margin: 0;
   }
 }
