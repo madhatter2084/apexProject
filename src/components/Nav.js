@@ -30,7 +30,7 @@ function Nav() {
         </li>
         <li>
           <Link to="/stats" className="nav__link" onClick={closeNav}>
-            Stats
+            Stats (Coming Soon)
           </Link>
         </li>
         <li>

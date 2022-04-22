@@ -7,6 +7,11 @@ function Home() {
     <div className="home">
       <div className="home__tile">
         <div className="home__button_grp">
+          <Link to="/stats">
+            <button className="home__button home__stats">
+              <h1>Stats (Coming Soon)</h1>
+            </button>
+          </Link>
           <Link to="/map">
             <button className="home__button home__map">
               <h1>Map</h1>
@@ -15,11 +20,6 @@ function Home() {
           <Link to="/news">
             <button className="home__button home__news">
               <h1>News</h1>
-            </button>
-          </Link>
-          <Link to="/stats">
-            <button className="home__button home__stats">
-              <h1>Stats</h1>
             </button>
           </Link>
           <Link to="/replicator">
