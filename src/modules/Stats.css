@@ -9,11 +9,41 @@
   text-align: center;
   justify-content: center;
   height: 100vh;
+  display: flex;
+  color: white;
+}
+
+.stats__box {
+  height: 500px;
+  width: 400px;
+  border-style: solid;
+  background-color: #000000;
+}
+
+.stats__platform {
+  margin: 10px;
+}
+
+input {
+  margin-left: 10px;
+}
+
+#stats__text {
+  width: 200px;
+  text-align: center;
+}
+
+.stats__btn {
+  margin: 10px;
+  background-color: yellow;
+  color: white;
+  text-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  padding: 5px 30px;
 }
 
 @media only screen and (max-width: 600px) {
   .stats {
-    background: url("../assets/mobileBackground.jpg") no-repeat center center
-      fixed;
+    background-image: linear-gradient(0.25turn, black, #000000, yellow);
   }
 }

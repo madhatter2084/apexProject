@@ -38,7 +38,6 @@
 
 @media only screen and (max-width: 600px) {
   .news {
-    background: url("../assets/mobileBackground.jpg") no-repeat center center
-      fixed;
+    background-image: linear-gradient(0.25turn, black, #000000, yellow);
   }
 }
