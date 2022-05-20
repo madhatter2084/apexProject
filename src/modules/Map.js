@@ -4,7 +4,6 @@ import "./Map.css";
 import requests from "../config/requests";
 
 function Map() {
-  console.log(requests.API_KEY);
   const [mapData, setMapData] = useState([]);
 
   useEffect(() => {

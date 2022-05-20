@@ -9,7 +9,7 @@ function Home() {
         <div className="home__button_grp">
           <Link to="/stats">
             <button className="home__button home__stats">
-              <h1>Stats (Coming Soon)</h1>
+              <h1>Stats</h1>
             </button>
           </Link>
           <Link to="/map">

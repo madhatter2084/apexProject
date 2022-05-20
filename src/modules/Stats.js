@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Stats.css";
-import requests from "../config/requests";
 import axios from "../config/axios";
 
 function Character() {
