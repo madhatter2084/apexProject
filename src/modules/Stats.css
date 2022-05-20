@@ -28,9 +28,10 @@
   margin-left: 10px;
 }
 
-#stats__text {
-  width: 200px;
+#user {
+  width: 220px;
   text-align: center;
+  height: 30px;
 }
 
 .stats__btn {
@@ -40,10 +41,6 @@
   text-shadow: 1px 1px 5px #000000;
   cursor: pointer;
   padding: 5px 30px;
-}
-
-#user {
-  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
