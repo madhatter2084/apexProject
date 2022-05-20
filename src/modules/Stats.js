@@ -18,10 +18,9 @@ function Character() {
 
   const getStats = async () => {
     const request = await axios.get(
-      `bridge?auth=${requests.API_KEY}&player=${user}&platform=${platform}`
+      `bridge?auth=dN5M7fBTN7FCyZEWNlNj&player=${user}&platform=${platform}`
     );
     setStats(request.data);
-    console.log(request.data);
     return request;
   };
 
@@ -33,6 +32,7 @@ function Character() {
         <form autoComplete="off" name="platforms">
           <div className="stats__platform" id="platform__menu">
             <input
+              className="radio"
               type="radio"
               id="pc"
               name="platform"
@@ -41,6 +41,7 @@ function Character() {
             />
             <label htmlFor="pc">PC</label>
             <input
+              className="radio"
               type="radio"
               id="ps4"
               name="platform"
@@ -49,6 +50,7 @@ function Character() {
             />
             <label htmlFor="ps4">Playstation</label>
             <input
+              className="radio"
               type="radio"
               id="xbox"
               name="platform"
@@ -65,10 +67,20 @@ function Character() {
               onChange={handleInput}
             />
           </div>
-          <button onClick={getStats} type="submit" className="stats__btn">
+          <button onClick={getStats} type="button" className="stats__btn">
             Search
           </button>
         </form>
+
+        <div className="stats__info">
+          BR RP: {stats?.global?.rank?.rankScore}
+          <br></br>
+          BR Rank: {stats?.global?.rank?.rankName}
+          <br></br>
+          Arena RP: {stats?.global?.arena?.rankScore}
+          <br></br>
+          Arena Rank: {stats?.global?.arena?.rankName}
+        </div>
       </div>
     </div>
   );
