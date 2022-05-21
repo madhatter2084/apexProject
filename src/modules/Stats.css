@@ -1,6 +1,6 @@
 .stats {
   text-align: center;
-  background: url("../assets/apexImage.jpg") no-repeat center 50px fixed;
+  background: url("../assets/apexImage2.jpg") no-repeat center 30px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,7 +17,10 @@
   height: 500px;
   width: 400px;
   border-style: solid;
-  background-color: #000000;
+  border-color: #000000;
+  border-radius: 10px;
+  background-image: linear-gradient(black, #000000, #7cadfc);
+  box-shadow: 5px 5px 8px #000000;
 }
 
 .stats__platform {
@@ -36,16 +39,18 @@
 
 .stats__btn {
   margin: 10px;
-  background-color: yellow;
+  background-color: #7cadfc;
   color: white;
   text-shadow: 1px 1px 5px #000000;
   cursor: pointer;
   padding: 5px 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px white;
 }
 
 @media only screen and (max-width: 600px) {
   .stats {
-    background-image: linear-gradient(0.25turn, black, #000000, yellow);
+    background-image: linear-gradient(0.25turn, black, #000000, #7cadfc);
   }
 
   .stats__box {

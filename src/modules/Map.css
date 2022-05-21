@@ -1,6 +1,6 @@
 .map {
   color: white;
-  background: url("../assets/apexImage.jpg") no-repeat center 50px fixed;
+  background: url("../assets/apexImage2.jpg") no-repeat center 30px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,9 +20,9 @@
   max-width: 500px;
   margin: 20px;
   border-style: solid;
-  border-color: yellow;
+  border-color: black;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 10px 15px 8px black;
 }
 
 .map__text {
@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 600px) {
   .map {
-    background-image: linear-gradient(0.25turn, black, #000000, yellow);
+    background-image: linear-gradient(0.25turn, black, #000000, #7cadfc);
   }
 
   .map__image {

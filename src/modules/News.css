@@ -4,7 +4,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: url("../assets/apexImage.jpg") no-repeat center 50px fixed;
+  background: url("../assets/apexImage2.jpg") no-repeat center 30px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,7 +20,7 @@
 .news__image {
   width: 200px;
   border-style: solid;
-  border-color: yellow;
+  border-color: black;
   border-radius: 10px;
   box-shadow: 8px 8px 10px #000000;
   transition: transform ease 300ms;
@@ -33,11 +33,11 @@
 .news__link {
   text-decoration: none;
   color: white;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 2px 2px #000000;
 }
 
 @media only screen and (max-width: 600px) {
   .news {
-    background-image: linear-gradient(0.25turn, black, #000000, yellow);
+    background-image: linear-gradient(0.25turn, black, #000000, #7cadfc);
   }
 }
