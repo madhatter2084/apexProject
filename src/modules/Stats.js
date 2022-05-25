@@ -31,22 +31,23 @@ function Character() {
 
   const renderStats = (
     <>
+      <br></br>
       <h1>{stats?.global?.name}</h1>
       <h3>Level: {stats?.global?.level}</h3>
       <br></br>
-      BR RP: {stats?.global?.rank?.rankScore}
+      <h2>BR Ranked Stats</h2>
+      <h3>BR RP: {stats?.global?.rank?.rankScore}</h3>
+      <h3>
+        BR Rank: {stats?.global?.rank?.rankName} {stats?.global?.rank?.rankDiv}
+      </h3>
       <br></br>
-      BR Rank: {stats?.global?.rank?.rankName} {stats?.global?.rank?.rankDiv}
+      <h2>Arena Ranked Stats</h2>
+      <h3>Arena RP: {stats?.global?.arena?.rankScore}</h3>
+      <h3>Arena Rank: {stats?.global?.arena?.rankName}</h3>
       <br></br>
-      <br></br>
-      Arena RP: {stats?.global?.arena?.rankScore}
-      <br></br>
-      Arena Rank: {stats?.global?.arena?.rankName}
-      <br></br>
-      <br></br>
-      Lifetime BR Kills: {stats?.total?.kills?.value}
-      <br></br>
-      Lifetime BR Damage: {stats?.total?.damage?.value}
+      <h2>Account Stats</h2>
+      <h3>Lifetime BR Kills: {stats?.total?.kills?.value}</h3>
+      <h3>Lifetime BR Damage: {stats?.total?.damage?.value}</h3>
     </>
   );
 
@@ -89,6 +90,7 @@ function Character() {
               placeholder="Gamertag/PSN ID/Steam ID/Origin ID"
               id="user"
               onChange={handleInput}
+              required
             />
           </div>
           <button
