@@ -27,8 +27,6 @@ function Stats() {
     return request;
   };
 
-  console.log(stats);
-
   const renderStats = (
     <>
       <br></br>
@@ -54,7 +52,11 @@ function Stats() {
         className="stats__legendIcon"
         src={stats?.legends?.selected.ImgAssets?.icon}
       ></img>
-      <h3></h3>
+      {stats?.legends?.selected?.data.map((currentLegend) => (
+        <h3>
+          {currentLegend?.name} : {currentLegend?.value}
+        </h3>
+      ))}
     </>
   );
 
