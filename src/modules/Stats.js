@@ -96,7 +96,7 @@ function Character() {
           <button
             onClick={getStats}
             disabled={isLoading}
-            type="button"
+            type="submit"
             className="stats__btn"
           >
             <h2>Search</h2>
