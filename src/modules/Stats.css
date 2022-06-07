@@ -14,13 +14,14 @@
 }
 
 .stats__box {
-  height: 550px;
+  /* height: 550px; */
   width: 400px;
   border-style: solid;
   border-color: white;
   border-radius: 10px;
   background-image: linear-gradient(black, #000000, #7cadfc);
   box-shadow: 5px 5px 8px #000000;
+  padding-bottom: 20px;
 }
 
 .stats__platform {
@@ -46,6 +47,11 @@
   padding: 5px 30px;
   border-radius: 10px;
   box-shadow: 3px 3px 10px white;
+}
+
+.stats__legendIcon {
+  height: 150px;
+  width: 150px;
 }
 
 @media only screen and (max-width: 600px) {

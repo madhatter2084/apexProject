@@ -3,7 +3,7 @@ import "./Stats.css";
 import axios from "../config/axios";
 import Spinner from "../components/Spinner";
 
-function Character() {
+function Stats() {
   const [platform, setPlatform] = useState("");
   const [user, setUser] = useState("");
   const [stats, setStats] = useState([]);
@@ -48,6 +48,13 @@ function Character() {
       <h2>Account Stats</h2>
       <h3>Lifetime BR Kills: {stats?.total?.kills?.value}</h3>
       <h3>Lifetime BR Damage: {stats?.total?.damage?.value}</h3>
+      <br></br>
+      <h2>Selected Legend: {stats?.legends?.selected?.LegendName}</h2>
+      <img
+        className="stats__legendIcon"
+        src={stats?.legends?.selected.ImgAssets?.icon}
+      ></img>
+      <h3></h3>
     </>
   );
 
@@ -96,7 +103,7 @@ function Character() {
           <button
             onClick={getStats}
             disabled={isLoading}
-            type="submit"
+            type=""
             className="stats__btn"
           >
             <h2>Search</h2>
@@ -111,4 +118,4 @@ function Character() {
   );
 }
 
-export default Character;
+export default Stats;
