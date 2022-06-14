@@ -1,5 +1,4 @@
 .stats {
-  text-align: center;
   background: url("../assets/apexImage2.jpg") no-repeat center 30px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,6 +10,7 @@
   min-height: 100vh;
   display: flex;
   color: white;
+  flex-direction: column;
 }
 
 .stats__box {
@@ -20,8 +20,10 @@
   border-color: white;
   border-radius: 10px;
   background-image: linear-gradient(black, #000000, #7cadfc);
-  box-shadow: 5px 5px 8px #000000;
+  box-shadow: 10px 10px 8px #000000;
   padding-bottom: 20px;
+  padding-top: 10px;
+  margin: 20px;
 }
 
 .stats__platform {
@@ -49,9 +51,31 @@
   box-shadow: 3px 3px 10px white;
 }
 
-.stats__legendIcon {
+.stats__Icons {
   height: 150px;
   width: 150px;
+}
+
+.stats__tile {
+  width: 300px;
+  height: 400px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  background-image: linear-gradient(black, #000000, #7cadfc);
+  box-shadow: 10px 10px 8px #000000;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin: 20px;
+  align-items: center;
+}
+
+.stats__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
