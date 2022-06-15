@@ -14,8 +14,7 @@
 }
 
 .stats__form {
-  /* height: 550px; */
-  width: 450px;
+  max-width: 450px;
   border-style: solid;
   border-color: white;
   border-radius: 10px;
