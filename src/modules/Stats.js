@@ -37,7 +37,7 @@ function Stats() {
   const horizon = stats?.legends?.all?.Horizon?.data || [];
   const lifeline = stats?.legends?.all?.Lifeline?.data || [];
   const loba = stats?.legends?.all?.Loba?.data || [];
-  const maggie = stats?.legends?.all?.MadMaggie?.data || [];
+  const maggie = stats?.legends?.all["Mad Maggie"].data || [];
   const mirage = stats?.legends?.all?.Mirage?.data || [];
   const newcastle = stats?.legends?.all?.Newcastle?.data || [];
   const octane = stats?.legends?.all?.Octane?.data || [];
@@ -235,7 +235,7 @@ function Stats() {
       <div className="stats__tile">
         <h1>MAD MAGGIE</h1>
         <img
-          src={stats?.legends?.all?.MadMaggie?.ImgAssets.icon}
+          src={stats?.legends?.all["Mad Maggie"].ImgAssets.icon}
           alt="Mad Maggie Character Icon"
           className="stats__Icons"
         ></img>
@@ -401,7 +401,7 @@ function Stats() {
 
   return (
     <div className="stats">
-      <div className="stats__box">
+      <div className="stats__form">
         <form autoComplete="off" name="platforms">
           <div className="stats__platform" id="platform__menu">
             <input
@@ -410,6 +410,7 @@ function Stats() {
               id="pc"
               name="platform"
               value="PC"
+              required
               onChange={handleChange}
             />
             <label htmlFor="pc">PC</label>
@@ -444,12 +445,17 @@ function Stats() {
           <button
             onClick={getStats}
             disabled={isLoading}
-            type=""
+            type="submit"
             className="stats__btn"
           >
             <h2>Search</h2>
           </button>
         </form>
+        <p className="disclaimer">
+          Due to limitations in the API we can only retrieve data from the
+          Legend you have currently selected. On top of that we can only
+          retrieve data you have set as your Trackers in-game.
+        </p>
         <h1>{stats?.global?.name}</h1>
         <h3>Level: {stats?.global?.level}</h3>
       </div>

@@ -13,9 +13,9 @@
   flex-direction: column;
 }
 
-.stats__box {
+.stats__form {
   /* height: 550px; */
-  width: 400px;
+  width: 450px;
   border-style: solid;
   border-color: white;
   border-radius: 10px;
@@ -76,6 +76,12 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  width: 85%;
+}
+
+.disclaimer {
+  margin: 20px;
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 600px) {
